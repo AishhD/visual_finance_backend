@@ -1,0 +1,2 @@
+class SavingType < ApplicationRecord
+end

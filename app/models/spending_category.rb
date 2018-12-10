@@ -1,0 +1,2 @@
+class SpendingCategory < ApplicationRecord
+end

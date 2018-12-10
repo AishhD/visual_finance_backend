@@ -1,3 +1,3 @@
 class Api::V1::AnswersController < ApplicationController
-  belongs_to :user, :option
+  belongs_to :user, :option, :question
 end
