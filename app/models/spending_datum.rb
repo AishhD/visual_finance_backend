@@ -1,0 +1,2 @@
+class SpendingDatum < ApplicationRecord
+end

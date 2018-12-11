@@ -1,0 +1,2 @@
+class CityOption < ApplicationRecord
+end

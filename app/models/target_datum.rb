@@ -1,0 +1,2 @@
+class TargetDatum < ApplicationRecord
+end

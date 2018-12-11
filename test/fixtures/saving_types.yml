@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food_non_alcholic_drinks: 1
+  alcoholic_drinks_tobacco_narcotics: 1
+  clothing_footwear: 1
+  household_bills: 1
+  reacreation_culture: 1
+  education: 1
+  resturants_hotels: 1
+  transport: 1
+  other: 1
+  user_id: 1
+  date: MyString
+
+two:
+  food_non_alcholic_drinks: 1
+  alcoholic_drinks_tobacco_narcotics: 1
+  clothing_footwear: 1
+  household_bills: 1
+  reacreation_culture: 1
+  education: 1
+  resturants_hotels: 1
+  transport: 1
+  other: 1
+  user_id: 1
+  date: MyString
