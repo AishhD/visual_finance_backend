@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_11_163602) do
+ActiveRecord::Schema.define(version: 2018_12_12_145544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,10 +37,10 @@ ActiveRecord::Schema.define(version: 2018_12_11_163602) do
     t.integer "resturants_hotels"
     t.integer "transport"
     t.integer "other"
-    t.integer "city_options_id"
-    t.integer "age_options_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "city_option_id"
+    t.integer "age_option_id"
   end
 
   create_table "spending_data", force: :cascade do |t|
@@ -81,8 +81,6 @@ ActiveRecord::Schema.define(version: 2018_12_11_163602) do
     t.string "age"
     t.string "location"
     t.string "children"
-    t.integer "spending_data_id"
-    t.integer "target_data_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

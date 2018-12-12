@@ -10,8 +10,7 @@ class CreateSpendingCategories < ActiveRecord::Migration[5.2]
       t.integer :resturants_hotels
       t.integer :transport
       t.integer :other
-      t.integer :city_options_id
-      t.integer :age_options_id
+
 
       t.timestamps
     end
