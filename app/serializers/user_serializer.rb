@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username, :password, :age, :location, :children
+  attributes :id, :username, :age, :location, :children
   has_many :spending_datum
   has_many :target_datum
   class SpendingDatumSerializer < ActiveModel::Serializer
