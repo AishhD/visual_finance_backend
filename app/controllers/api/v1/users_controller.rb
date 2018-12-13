@@ -9,7 +9,7 @@ class Api::V1::UsersController < ApplicationController
         if @user
             render json: @user
         else
-            render json: {error: "This user was not found"}, status: 404
+            render json: {errors: @user.errors.full_messages}, status: 404
         end
     end
 
@@ -19,7 +19,8 @@ class Api::V1::UsersController < ApplicationController
             @user.save
             render json: @user
         else
-            render json: {error: "Unable to create this user"}, status: 400
+            # flash[:errors] = ["Invalid username or password"]
+            render json: {errors: @user.errors.full_messages}, status: 400
         end
     end
 
@@ -29,7 +30,7 @@ class Api::V1::UsersController < ApplicationController
       if @user.update(user_params)
           render json: @user
       else
-          render json: {error: "Unable to create this user"}, status: 400
+          render json: {errors: @user.errors.full_messages}, status: 400
       end
     end
 
