@@ -25,7 +25,7 @@ class Api::V1::TargetDatasController < ApplicationController
   private
 
    def target_data_params
-       params.require(:target_data).permit()
+       params.require(:target_data).permit(:food_non_alcholic_drinks, :alcoholic_drinks_tobacco_narcotics, :clothing_footwear, :household_bills, :recreation_culture, :education, :resturants_hotels, :transport, :other, :user_id, :date)
    end
 
 end

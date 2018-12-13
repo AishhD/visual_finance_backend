@@ -25,10 +25,9 @@ class Api::V1::SpendingDatasController < ApplicationController
   private
 
 
-
- def user_params
-     params.require(:spending_data).permit()
- end
+  def spending_data_params
+    params.require(:spending_data).permit(:food_non_alcholic_drinks, :alcoholic_drinks_tobacco_narcotics, :clothing_footwear, :household_bills, :recreation_culture, :education, :resturants_hotels, :transport, :other, :user_id, :date)
+  end
 
 
 end

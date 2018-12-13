@@ -5,7 +5,7 @@ class CreateSpendingCategories < ActiveRecord::Migration[5.2]
       t.integer :alcoholic_drinks_tobacco_narcotics
       t.integer :clothing_footwear
       t.integer :household_bills
-      t.integer :reacreation_culture
+      t.integer :recreation_culture
       t.integer :education
       t.integer :resturants_hotels
       t.integer :transport

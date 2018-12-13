@@ -22,10 +22,20 @@ class Api::V1::UsersController < ApplicationController
         end
     end
 
+    def update
+      @user = User.find(params[:id])
+      @user.update(user_params)
+      if @user.update(user_params)
+          render json: @user
+      else
+          render json: {error: "Unable to create this user"}, status: 400
+      end
+    end
+
     private
 
    def user_params
-       params.require(:user).permit(:username, :password)
+       params.require(:user).permit(:username, :password, :age, :location, :children)
    end
 
 end

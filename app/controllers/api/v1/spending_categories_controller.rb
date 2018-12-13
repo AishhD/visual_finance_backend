@@ -12,9 +12,9 @@ class Api::V1::SpendingCategoriesController < ApplicationController
      else
          render json: {error: "This category was not found"}, status: 404
      end
-    end
+  end
 
 
-   
+
 
 end
