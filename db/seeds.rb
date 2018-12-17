@@ -27,7 +27,20 @@ age4 = AgeOption.create!(age_group: "65 to 74")
 age5 = AgeOption.create!(age_group: "75 or over")
 
 
-# age national status
+
+# children stats
+children = SpendingCategory.create!(
+  food_non_alcholic_drinks: 74.5,
+  alcoholic_drinks_tobacco_narcotics: 11.8,
+  clothing_footwear: 34.2,
+  household_bills: 82.7,
+  recreation_culture: 82.3,
+  education: 12.1,
+  resturants_hotels: 52.6,
+  transport: 90.1,
+  other: 55.2)
+
+# age national stats
 age1NS = SpendingCategory.create!(
   food_non_alcholic_drinks: 43.60,
   alcoholic_drinks_tobacco_narcotics: 10.00,
