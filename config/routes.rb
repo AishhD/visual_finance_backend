@@ -4,9 +4,16 @@ Rails.application.routes.draw do
 # not used yet
 namespace :api do
   namespace :v1 do
-    resources :users, only: [:index, :show, :create, :update]
+    resources :users, only: [:index, :show, :create, :update] do
+      collection do
+        post 'login'
+        get 'current_user'
+      end
+    end
   end
 end
+
+
 
 # not used yet
   namespace :api do
