@@ -1,3 +1,3 @@
 class CityOption < ApplicationRecord
-  has_many :spending_category
+  belongs_to :spending_category
 end

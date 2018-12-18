@@ -37,6 +37,13 @@ end
   end
 
 # not used yet
+namespace :api do
+  namespace :v1 do
+    resources :children_options, only: [:index, :show]
+  end
+end
+
+# not used yet
   namespace :api do
     namespace :v1 do
       resources :city_options, only: [:index, :show]

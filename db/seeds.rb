@@ -8,25 +8,6 @@
 
 
 
-city1 = CityOption.create!(city_name: "North East")
-city2 = CityOption.create!(city_name: "North West")
-city3 = CityOption.create!(city_name: "Yorkshire and The Humber")
-city4 = CityOption.create!(city_name: "East Midlands")
-city5 = CityOption.create!(city_name: "West Midlands")
-city6 = CityOption.create!(city_name: "East")
-city7 = CityOption.create!(city_name: "London")
-city8 = CityOption.create!(city_name: "South East")
-city9 = CityOption.create!(city_name: "South West")
-
-
-
-age1 = AgeOption.create!(age_group: "less than 30")
-age2 = AgeOption.create!(age_group: "30 to 40")
-age3 = AgeOption.create!(age_group: "50 to 64")
-age4 = AgeOption.create!(age_group: "65 to 74")
-age5 = AgeOption.create!(age_group: "75 or over")
-
-
 
 # children stats
 children = SpendingCategory.create!(
@@ -51,7 +32,7 @@ age1NS = SpendingCategory.create!(
   resturants_hotels: 52.40,
   transport: 68.60,
   other: 32.8,
-  age_option_id: 1)
+)
 
 
 age2NS = SpendingCategory.create!(
@@ -64,7 +45,7 @@ age2NS = SpendingCategory.create!(
   resturants_hotels: 56.90,
   transport: 94.40,
   other: 48.10,
-  age_option_id: 2)
+)
 
 age3NS = SpendingCategory.create!(food_non_alcholic_drinks: 63.90,
   alcoholic_drinks_tobacco_narcotics: 15.20,
@@ -75,7 +56,7 @@ age3NS = SpendingCategory.create!(food_non_alcholic_drinks: 63.90,
   resturants_hotels: 59.70,
   transport: 95.30,
   other: 48.10,
-  age_option_id: 3)
+)
 
 age4NS = SpendingCategory.create!(
   food_non_alcholic_drinks: 54.70,
@@ -87,7 +68,7 @@ age4NS = SpendingCategory.create!(
   resturants_hotels: 43.10,
   transport: 71.50,
   other: 35.90,
-  age_option_id: 4)
+)
 
 age5NS = SpendingCategory.create!(
   food_non_alcholic_drinks: 40.80,
@@ -99,7 +80,7 @@ age5NS = SpendingCategory.create!(
   resturants_hotels: 20.70,
   transport: 29.70,
   other: 26.10,
-  age_option_id: 5)
+)
 
 
 # city national database
@@ -115,7 +96,7 @@ northEastNS = SpendingCategory.create!(
   resturants_hotels: 38.60,
   transport: 58.50,
   other: 29.70,
-  city_option_id: 1)
+)
 
 
 northWestNS = SpendingCategory.create!(
@@ -128,7 +109,7 @@ northWestNS = SpendingCategory.create!(
   resturants_hotels: 43.20,
   transport: 69.90,
   other: 38.00,
-  city_option_id: 2)
+)
 
 yorkshireTheHumberNS = SpendingCategory.create!(
   food_non_alcholic_drinks: 51.00,
@@ -140,7 +121,7 @@ yorkshireTheHumberNS = SpendingCategory.create!(
   resturants_hotels: 42.8,
   transport: 67.4,
   other: 33.7,
-  city_option_id: 3)
+)
 
 eastMidlandsNS = SpendingCategory.create!(
   food_non_alcholic_drinks: 57.9,
@@ -152,7 +133,7 @@ eastMidlandsNS = SpendingCategory.create!(
   resturants_hotels: 42.1,
   transport: 79.4,
   other: 39.9,
-  city_option_id: 4)
+)
 
 westMidlandsNS = SpendingCategory.create!(
   food_non_alcholic_drinks: 56.7,
@@ -164,7 +145,7 @@ westMidlandsNS = SpendingCategory.create!(
   resturants_hotels: 39.5,
   transport: 65.1,
   other: 37.7,
-  city_option_id: 5)
+)
 
 eastNS = SpendingCategory.create!(
   food_non_alcholic_drinks: 60.3,
@@ -176,7 +157,7 @@ eastNS = SpendingCategory.create!(
   resturants_hotels: 47.2,
   transport: 87.4,
   other: 47.0,
-  city_option_id: 6)
+)
 
 
 londonNS = SpendingCategory.create!(
@@ -189,7 +170,7 @@ londonNS = SpendingCategory.create!(
   resturants_hotels: 59.7,
   transport: 71.8,
   other: 46.0,
-  city_option_id: 7)
+)
 
 
 southEastNS = SpendingCategory.create!(
@@ -202,20 +183,31 @@ southEastNS = SpendingCategory.create!(
   resturants_hotels: 52.0,
   transport: 95.7,
   other: 49.2,
-  city_option_id: 8)
+)
 
-  southWestNS = SpendingCategory.create!(
-    food_non_alcholic_drinks: 58.9,
-    alcoholic_drinks_tobacco_narcotics: 10.7,
-    clothing_footwear: 20.0,
-    household_bills: 70.6,
-    recreation_culture: 71.7,
-    education: 7.1,
-    resturants_hotels: 43.8,
-    transport: 76.2,
-    other: 40.6,
-    city_option_id: 9)
+southWestNS = SpendingCategory.create!(
+  food_non_alcholic_drinks: 58.9,
+  alcoholic_drinks_tobacco_narcotics: 10.7,
+  clothing_footwear: 20.0,
+  household_bills: 70.6,
+  recreation_culture: 71.7,
+  education: 7.1,
+  resturants_hotels: 43.8,
+  transport: 76.2,
+  other: 40.6,
+)
 
+# children stats
+children = SpendingCategory.create!(
+  food_non_alcholic_drinks: 58.0,
+  alcoholic_drinks_tobacco_narcotics: 11.9,
+  clothing_footwear: 25.1,
+  household_bills: 72.6,
+  recreation_culture: 73.5,
+  education: 5.7,
+  resturants_hotels: 50.1,
+  transport: 79.7,
+  other: 41.8)
 
 
 ed = User.create(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false")
@@ -242,3 +234,26 @@ edtargetData = TargetDatum.create!(food_non_alcholic_drinks: 20,
   other: 5,
   user_id: 1,
   date: "22932")
+
+
+
+children1 = ChildrenOption.create!(children: "with children", spending_category_id: 1)
+children2 = ChildrenOption.create!(children: "with and without children", spending_category_id: 16)
+
+city1 = CityOption.create!(city_name: "North East", spending_category_id: 7)
+city2 = CityOption.create!(city_name: "North West", spending_category_id: 8)
+city3 = CityOption.create!(city_name: "Yorkshire and The Humber", spending_category_id: 9)
+city4 = CityOption.create!(city_name: "East Midlands", spending_category_id: 10)
+city5 = CityOption.create!(city_name: "West Midlands", spending_category_id: 11)
+city6 = CityOption.create!(city_name: "East", spending_category_id: 12)
+city7 = CityOption.create!(city_name: "London", spending_category_id: 13)
+city8 = CityOption.create!(city_name: "South East", spending_category_id: 14)
+city9 = CityOption.create!(city_name: "South West", spending_category_id: 15)
+
+
+
+age1 = AgeOption.create!(age_group: "less than 30", spending_category_id: 2)
+age2 = AgeOption.create!(age_group: "30 to 40", spending_category_id: 3)
+age3 = AgeOption.create!(age_group: "50 to 64", spending_category_id: 4)
+age4 = AgeOption.create!(age_group: "65 to 74", spending_category_id: 5)
+age5 = AgeOption.create!(age_group: "75 or over", spending_category_id: 6)

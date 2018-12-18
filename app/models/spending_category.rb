@@ -1,4 +1,5 @@
 class SpendingCategory < ApplicationRecord
-  belongs_to :city_option, optional: true
-  belongs_to :age_option, optional: true
+    has_one :city_option
+    has_one :children_option
+    has_one :age_option
 end

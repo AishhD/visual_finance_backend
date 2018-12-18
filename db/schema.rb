@@ -17,12 +17,21 @@ ActiveRecord::Schema.define(version: 2018_12_12_145544) do
 
   create_table "age_options", force: :cascade do |t|
     t.string "age_group"
+    t.integer "spending_category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "children_options", force: :cascade do |t|
+    t.string "children"
+    t.integer "spending_category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "city_options", force: :cascade do |t|
     t.string "city_name"
+    t.integer "spending_category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,8 +48,6 @@ ActiveRecord::Schema.define(version: 2018_12_12_145544) do
     t.integer "other"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "city_option_id"
-    t.integer "age_option_id"
   end
 
   create_table "spending_data", force: :cascade do |t|
