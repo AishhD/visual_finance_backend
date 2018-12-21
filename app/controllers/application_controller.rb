@@ -20,6 +20,11 @@ class ApplicationController < ActionController::API
         end
     end
 
+    def get_current_user
+        id = decoded_token.first['id']
+        User.find_by(id: id)
+      end
+
     def token
         request.headers['Authorization']
     end

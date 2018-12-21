@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApplicationController
+
     def index
         @users = User.all
         render json: @users
@@ -52,19 +53,23 @@ class Api::V1::UsersController < ApplicationController
   def login
     user = User.find_by(username: user_params[:username])
     if user && user.authenticate(user_params[:password])
-      render json: { token: issue_token({ id: user.id }), username: user.username}
+      render json: { token: issue_token({ id: user.id }), username: user.username, age: user.age, location: user.location, children: user.children}
     else
         render json: {errors: @user.errors.full_messages}, status: 400
     end
   end
 
-  def get_current_user
-    if current_user
-      render json: { username: current_user.username, id: current_user.id, target: current_user }
+
+  def validate
+    @user = get_current_user
+    if @user
+      render json: {username: @user.username, token: issue_token({id: @user.id})}
     else
-        render json: {errors: @user.errors.full_messages}, status: 400
+      render json: {error: 'Username/password invalid.'}, status: 401
     end
   end
+
+
 
   private
 

@@ -7,7 +7,8 @@ namespace :api do
     resources :users, only: [:index, :show, :create, :update] do
       collection do
         post 'login'
-        get 'current_user'
+        get 'validate', to: 'users#validate'
+        # get 'current_user'
       end
     end
   end
