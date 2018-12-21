@@ -69,7 +69,29 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-
+def average
+  @users = User.all
+  @education = User.all.joins(:spending_datum).sum("education") / User.all.count
+  @food = User.all.joins(:spending_datum).sum("food_non_alcholic_drinks") / User.all.count
+  @alcohol = User.all.joins(:spending_datum).sum("alcoholic_drinks_tobacco_narcotics") / User.all.count
+  @clothing = User.all.joins(:spending_datum).sum("clothing_footwear") / User.all.count
+  @household = User.all.joins(:spending_datum).sum("household_bills") / User.all.count
+  @recreaction = User.all.joins(:spending_datum).sum("recreation_culture") / User.all.count
+  @resturants = User.all.joins(:spending_datum).sum("resturants_hotels") / User.all.count
+  @transport = User.all.joins(:spending_datum).sum("transport") / User.all.count
+  @other = User.all.joins(:spending_datum).sum("other") / User.all.count
+  render json: {
+    food_non_alcholic_drinks: @food, 
+    alcoholic_drinks_tobacco_narcotics: @alcohol, 
+    clothing_footwear: @clothing,
+    household_bills: @household,
+    recreation_culture: @recreaction,
+    education: @education,
+    resturants_hotels: @resturants,
+    transport: @transport,
+    other: @other
+  }
+end
 
   private
 

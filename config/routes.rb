@@ -8,6 +8,7 @@ namespace :api do
       collection do
         post 'login'
         get 'validate', to: 'users#validate'
+        get 'average', to: 'users#average'
         # get 'current_user'
       end
     end

@@ -209,7 +209,10 @@ average = SpendingCategory.create!(
   transport: 79.7,
   other: 41.8)
 
-ed = User.create(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false")
+ed = User.create!(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false")
+green = User.create!(username: "green", password: "tea", age: "less than 30",location: "london", children: "false")
+coke = User.create!(username: "coke", password: "cola", age: "less than 30",location: "london", children: "false")
+lin = User.create!(username: "lin", password: "dor", age: "less than 30",location: "london", children: "false")
 
 edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
    alcoholic_drinks_tobacco_narcotics: 57, clothing_footwear: 182,
@@ -222,17 +225,43 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     user_id: 1,
     date: "22932")
 
-edtargetData = TargetDatum.create!(food_non_alcholic_drinks: 20,
-  alcoholic_drinks_tobacco_narcotics: 57,
-  clothing_footwear: 182,
-  household_bills: 899,
-  recreation_culture: 76,
-  education: 24,
-  resturants_hotels: 63,
-  transport: 63,
-  other: 5,
-  user_id: 1,
-  date: "22932")
+    edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 65,
+   alcoholic_drinks_tobacco_narcotics: 75, 
+   clothing_footwear: 55,
+    household_bills: 474,
+    recreation_culture: 64,
+    education: 64,
+    resturants_hotels: 75,
+    transport: 35,
+    other: 85,
+    user_id: 2,
+    date: "22932")
+
+    edspendingData = SpendingDatum.create!(
+    food_non_alcholic_drinks: 75,
+   alcoholic_drinks_tobacco_narcotics: 75, 
+   clothing_footwear: 17,
+    household_bills: 755,
+    recreation_culture: 57,
+    education: 75,
+    resturants_hotels: 75,
+    transport: 74,
+    other: 46,
+    user_id: 3,
+    date: "22932")
+
+    edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 267,
+   alcoholic_drinks_tobacco_narcotics: 87, 
+   clothing_footwear: 186,
+    household_bills: 765,
+    recreation_culture: 6,
+    education: 3,
+    resturants_hotels: 66,
+    transport: 75,
+    other: 7,
+    user_id: 4,
+    date: "22932")
+
 
 
 
