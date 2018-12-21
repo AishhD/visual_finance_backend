@@ -197,8 +197,8 @@ southWestNS = SpendingCategory.create!(
   other: 40.6,
 )
 
-# children stats
-children = SpendingCategory.create!(
+  # national average stats
+average = SpendingCategory.create!(
   food_non_alcholic_drinks: 58.0,
   alcoholic_drinks_tobacco_narcotics: 11.9,
   clothing_footwear: 25.1,
@@ -208,7 +208,6 @@ children = SpendingCategory.create!(
   resturants_hotels: 50.1,
   transport: 79.7,
   other: 41.8)
-
 
 ed = User.create(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false")
 
@@ -238,7 +237,7 @@ edtargetData = TargetDatum.create!(food_non_alcholic_drinks: 20,
 
 
 children1 = ChildrenOption.create!(children: "with children", spending_category_id: 1)
-children2 = ChildrenOption.create!(children: "with and without children", spending_category_id: 16)
+# children2 = ChildrenOption.create!(children: "with and without children", spending_category_id: 16)
 
 city1 = CityOption.create!(city_name: "North East", spending_category_id: 7)
 city2 = CityOption.create!(city_name: "North West", spending_category_id: 8)
@@ -257,3 +256,5 @@ age2 = AgeOption.create!(age_group: "30 to 40", spending_category_id: 3)
 age3 = AgeOption.create!(age_group: "50 to 64", spending_category_id: 4)
 age4 = AgeOption.create!(age_group: "65 to 74", spending_category_id: 5)
 age5 = AgeOption.create!(age_group: "75 or over", spending_category_id: 6)
+
+average1 = NationalAverage.create!(national_average: "England", spending_category_id: 16)
