@@ -4,7 +4,7 @@ class CreateHouseholdSpendings < ActiveRecord::Migration[5.2]
       t.string :country
       t.string :measure
       t.integer :time
-      t.float :amount
+      t.float :value
     end
   end
 end

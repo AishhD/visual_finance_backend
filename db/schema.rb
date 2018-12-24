@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2018_12_24_141329) do
     t.string "country"
     t.string "measure"
     t.integer "time"
-    t.float "amount"
+    t.float "value"
   end
 
   create_table "national_averages", force: :cascade do |t|

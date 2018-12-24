@@ -289,6 +289,11 @@ age5 = AgeOption.create!(age_group: "75 or over", spending_category_id: 6)
 average1 = NationalAverage.create!(national_average: "England", spending_category_id: 16)
 
 
-country1 = HouseholdSpending.create!(country: "AUS",measure: "MLN_USD", time: 2015, amount: 658188.6034)
+require 'csv'    
 
-country2 = HouseholdSpending.create!(country: "AUT",measure: "MLN_USD", time: 2015, amount: 217653.4063)
+filename = File.join Rails.root, "OECD_Household_Spending.csv"
+csv_text = File.read(filename)
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+    HouseholdSpending.create!(row.to_hash)
+end
