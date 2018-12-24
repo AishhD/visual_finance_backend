@@ -15,7 +15,12 @@ namespace :api do
   end
 end
 
-
+# not used yet
+namespace :api do
+  namespace :v1 do
+    resources :household_spendings, only: [:index]
+  end
+end
 
 # not used yet
   namespace :api do
