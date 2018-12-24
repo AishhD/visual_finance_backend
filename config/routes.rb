@@ -18,7 +18,7 @@ end
 # not used yet
 namespace :api do
   namespace :v1 do
-    resources :household_spendings, only: [:index, :show]
+    resources :household_spendings, only: [:index]
   end
 end
 
