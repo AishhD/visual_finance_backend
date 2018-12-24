@@ -81,7 +81,8 @@ def average
   @transport = User.all.joins(:spending_datum).sum("transport") / User.all.count
   @other = User.all.joins(:spending_datum).sum("other") / User.all.count
   render json: {
-    food_non_alcholic_drinks: @food, 
+    spending_category: 
+    {food_non_alcholic_drinks: @food, 
     alcoholic_drinks_tobacco_narcotics: @alcohol, 
     clothing_footwear: @clothing,
     household_bills: @household,
@@ -89,7 +90,7 @@ def average
     education: @education,
     resturants_hotels: @resturants,
     transport: @transport,
-    other: @other
+    other: @other}
   }
 end
 

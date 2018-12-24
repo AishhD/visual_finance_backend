@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_21_094512) do
+ActiveRecord::Schema.define(version: 2018_12_24_141329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 2018_12_21_094512) do
     t.integer "spending_category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "household_spendings", force: :cascade do |t|
+    t.string "country"
+    t.string "measure"
+    t.integer "time"
+    t.float "amount"
   end
 
   create_table "national_averages", force: :cascade do |t|

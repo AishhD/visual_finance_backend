@@ -1,0 +1,3 @@
+class HouseholdSpending < ApplicationRecord
+  
+end

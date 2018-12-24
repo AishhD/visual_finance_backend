@@ -287,3 +287,8 @@ age4 = AgeOption.create!(age_group: "65 to 74", spending_category_id: 5)
 age5 = AgeOption.create!(age_group: "75 or over", spending_category_id: 6)
 
 average1 = NationalAverage.create!(national_average: "England", spending_category_id: 16)
+
+
+country1 = HouseholdSpending.create!(country: "AUS",measure: "MLN_USD", time: 2015, amount: 658188.6034)
+
+country2 = HouseholdSpending.create!(country: "AUT",measure: "MLN_USD", time: 2015, amount: 217653.4063)
