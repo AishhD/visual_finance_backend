@@ -298,7 +298,7 @@ require 'csv'
 #     HouseholdSpending.create!(row.to_hash)
 # end
 
-filename = File.join Rails.root, "world_bank_household_data.csv"
+filename = File.join Rails.root, "world_bank_household_data_2016.csv"
 csv_text = File.read(filename)
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
