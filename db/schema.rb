@@ -38,8 +38,6 @@ ActiveRecord::Schema.define(version: 2018_12_24_141329) do
 
   create_table "household_spendings", force: :cascade do |t|
     t.string "country"
-    t.string "measure"
-    t.integer "time"
     t.float "value"
   end
 

@@ -291,7 +291,14 @@ average1 = NationalAverage.create!(national_average: "England", spending_categor
 
 require 'csv'    
 
-filename = File.join Rails.root, "OECD_Household_Spending.csv"
+# filename = File.join Rails.root, "OECD_Household_Spending.csv"
+# csv_text = File.read(filename)
+# csv = CSV.parse(csv_text, :headers => true)
+# csv.each do |row|
+#     HouseholdSpending.create!(row.to_hash)
+# end
+
+filename = File.join Rails.root, "world_bank_household_data.csv"
 csv_text = File.read(filename)
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
