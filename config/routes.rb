@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-# not used yet
+
 namespace :api do
   namespace :v1 do
     resources :users, only: [:index, :show, :create, :update] do
@@ -9,6 +9,18 @@ namespace :api do
         post 'login'
         get 'validate', to: 'users#validate'
         get 'average', to: 'users#average'
+        # get 'current_user'
+      end
+    end
+  end
+end
+
+# not used yet
+namespace :api do
+  namespace :v1 do
+    resources :spending_data, only: [:index, :create] do
+      collection do
+        get 'average', to: 'spending_data#average'
         # get 'current_user'
       end
     end

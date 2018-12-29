@@ -212,7 +212,7 @@ average = SpendingCategory.create!(
 ed = User.create!(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false")
 green = User.create!(username: "green", password: "tea", age: "less than 30",location: "london", children: "false")
 coke = User.create!(username: "coke", password: "cola", age: "less than 30",location: "london", children: "false")
-lin = User.create!(username: "lin", password: "dor", age: "less than 30",location: "london", children: "false")
+lin = User.create!(username: "lin", password: "dor", age: "less than 30",location: "london", children: "false", spending_data_id: 1)
 
 edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
    alcoholic_drinks_tobacco_narcotics: 57, clothing_footwear: 182,
@@ -222,7 +222,6 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     resturants_hotels: 63,
     transport: 63,
     other: 5,
-    user_id: 1,
     date: "22932")
 
     edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 65,
@@ -234,7 +233,6 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     resturants_hotels: 75,
     transport: 35,
     other: 85,
-    user_id: 2,
     date: "22932")
 
     edspendingData = SpendingDatum.create!(
@@ -247,7 +245,6 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     resturants_hotels: 75,
     transport: 74,
     other: 46,
-    user_id: 3,
     date: "22932")
 
     edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 267,
@@ -259,7 +256,6 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     resturants_hotels: 66,
     transport: 75,
     other: 7,
-    user_id: 4,
     date: "22932")
 
 

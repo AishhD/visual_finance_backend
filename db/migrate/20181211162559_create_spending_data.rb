@@ -10,7 +10,6 @@ class CreateSpendingData < ActiveRecord::Migration[5.2]
       t.integer :resturants_hotels
       t.integer :transport
       t.integer :other
-      t.integer :user_id
       t.string :date
 
       t.timestamps
