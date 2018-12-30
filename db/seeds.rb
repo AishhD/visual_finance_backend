@@ -209,11 +209,6 @@ average = SpendingCategory.create!(
   transport: 79.7,
   other: 41.8)
 
-ed = User.create!(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false")
-green = User.create!(username: "green", password: "tea", age: "less than 30",location: "london", children: "false")
-coke = User.create!(username: "coke", password: "cola", age: "less than 30",location: "london", children: "false")
-lin = User.create!(username: "lin", password: "dor", age: "less than 30",location: "london", children: "false", spending_data_id: 1)
-
 edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
    alcoholic_drinks_tobacco_narcotics: 57, clothing_footwear: 182,
     household_bills: 899,
@@ -259,7 +254,10 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     date: "22932")
 
 
-
+    ed = User.create!(username: "ed", password: "meow", age: "less than 30",location: "london", children: "false", spending_datum_id: 4)
+    green = User.create!(username: "green", password: "tea", age: "less than 30",location: "london", children: "false", spending_datum_id: 2)
+    coke = User.create!(username: "coke", password: "cola", age: "less than 30",location: "london", children: "false", spending_datum_id: 3)
+    lin = User.create!(username: "lin", password: "dor", age: "less than 30",location: "london", children: "false", spending_datum_id: 1)
 
 children1 = ChildrenOption.create!(children: "with children", spending_category_id: 1)
 # children2 = ChildrenOption.create!(children: "with and without children", spending_category_id: 16)

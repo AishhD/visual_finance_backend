@@ -99,7 +99,7 @@ ActiveRecord::Schema.define(version: 2018_12_24_141329) do
     t.string "age"
     t.string "location"
     t.string "children"
-    t.integer "spending_data_id"
+    t.integer "spending_datum_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

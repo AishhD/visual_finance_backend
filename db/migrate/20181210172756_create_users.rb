@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :age
       t.string :location
       t.string :children
-      t.integer :spending_data_id
+      t.integer :spending_datum_id
 
       t.timestamps
     end

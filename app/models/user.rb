@@ -1,6 +1,6 @@
 class User < ApplicationRecord
     has_many :target_datum
-    has_one :spending_datum, required: false
+    belongs_to :spending_datum
 
     validates :username, uniqueness: true, presence: true
     has_secure_password
