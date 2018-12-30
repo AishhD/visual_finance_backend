@@ -54,7 +54,7 @@ class Api::V1::UsersController < ApplicationController
   def login
     user = User.find_by(username: user_params[:username])
     if user && user.authenticate(user_params[:password])
-      render json: { token: issue_token({ id: user.id }), username: user.username, age: user.age, location: user.location, children: user.children}
+      render json: { token: issue_token({ id: user.id }), username: user.username, age: user.age, location: user.location, children: user.children, spending_datum: user.spending_datum}
     else
         render json: {errors: @user.errors.full_messages}, status: 400
     end
