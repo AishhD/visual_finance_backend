@@ -14,16 +14,17 @@ class Api::V1::UsersController < ApplicationController
         end
     end
 
-#     def create
-#         @user = User.new(user_params)
-#         if @user.valid?
-#             @user.save
-#             render json: @user
-#         else
-#             # flash[:errors] = ["Invalid username or password"]
-#             render json: {errors: @user.errors.full_messages}, status: 400
-#         end
-#     end
+    # def create
+    #     @user = User.new(user_params)
+    #     byebug
+    #     if @user.valid?
+    #         @user.save
+    #         render json: @user
+    #     else
+    #         # flash[:errors] = ["Invalid username or password"]
+    #         render json: {errors: @user.errors.full_messages}, status: 400
+    #     end
+    # end
 
 #     def update
 #       @user = User.find(params[:id])
@@ -42,7 +43,8 @@ class Api::V1::UsersController < ApplicationController
 #    end
 
     def create
-    user = User.create(user_params)
+    user = User.create!(user_params)
+    byebug
     if user
       render json: { token: issue_token({ id: user.id}), username: user.username }
     else
@@ -73,7 +75,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :password_confirmation, :age, :location, :children)
+    params.require(:user).permit(:username, :password, :age, :password_confirmation, :location, :children, :spending_datum_id)
   end
 
 end
