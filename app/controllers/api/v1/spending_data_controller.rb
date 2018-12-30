@@ -14,8 +14,6 @@ class Api::V1::SpendingDataController < ApplicationController
   end
 
   def create
-    
-    
     spending_data = SpendingDatum.create(spending_data_params)
     if spending_data
         render json: spending_data

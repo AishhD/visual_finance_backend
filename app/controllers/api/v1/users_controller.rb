@@ -44,7 +44,6 @@ class Api::V1::UsersController < ApplicationController
 
     def create
     user = User.create!(user_params)
-    byebug
     if user
       render json: { token: issue_token({ id: user.id}), username: user.username }
     else
