@@ -56,7 +56,7 @@ class Api::V1::UsersController < ApplicationController
     if user && user.authenticate(user_params[:password])
       render json: { token: issue_token({ id: user.id }), username: user.username, age: user.age, location: user.location, children: user.children, spending_datum: user.spending_datum}
     else
-        render json: {errors: @user.errors.full_messages}, status: 400
+        render json: {errors: 'Wrong username OR password'}, status: 400
     end
   end
 
