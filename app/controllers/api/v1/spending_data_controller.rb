@@ -35,6 +35,7 @@ class Api::V1::SpendingDataController < ApplicationController
     @other = @spending_data.sum("other") / @spending_data.count
 
     render json: {
+      average_user_spending: "yes",
       spending_category: 
       {food_non_alcholic_drinks: @food, 
       alcoholic_drinks_tobacco_narcotics: @alcohol, 
