@@ -275,10 +275,10 @@ city9 = CityOption.create!(city_name: "South West", spending_category_id: 15)
 
 
 age1 = AgeOption.create!(age_group: "less than 30", spending_category_id: 2)
-age2 = AgeOption.create!(age_group: "30 to 40", spending_category_id: 3)
-age3 = AgeOption.create!(age_group: "50 to 64", spending_category_id: 4)
-age4 = AgeOption.create!(age_group: "65 to 74", spending_category_id: 5)
-age5 = AgeOption.create!(age_group: "75 or over", spending_category_id: 6)
+# age2 = AgeOption.create!(age_group: "30 to 40", spending_category_id: 2)
+# age3 = AgeOption.create!(age_group: "50 to 64", spending_category_id: 2)
+# age4 = AgeOption.create!(age_group: "65 to 74", spending_category_id: 2)
+# age5 = AgeOption.create!(age_group: "75 or over", spending_category_id: 2)
 
 average1 = NationalAverage.create!(national_average: "England", spending_category_id: 16)
 
