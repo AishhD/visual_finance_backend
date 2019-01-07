@@ -25,7 +25,7 @@ class Api::V1::SpendingDataController < ApplicationController
   def average
     @spending_data = SpendingDatum.all
     @education = @spending_data.sum("education") / @spending_data.count
-    @food = @spending_data.sum("food_non_alcholic_drinks") / @spending_data.count
+    @food = @spending_data.sum("food_non_alcoholic_drinks") / @spending_data.count
     @alcohol = @spending_data.sum("alcoholic_drinks_tobacco_narcotics") / @spending_data.count
     @clothing = @spending_data.sum("clothing_footwear") / @spending_data.count
     @household = @spending_data.sum("household_bills") / @spending_data.count
@@ -37,7 +37,7 @@ class Api::V1::SpendingDataController < ApplicationController
     render json: {
       average_user_spending: "yes",
       spending_category: 
-      {food_non_alcholic_drinks: @food, 
+      {food_non_alcoholic_drinks: @food, 
       alcoholic_drinks_tobacco_narcotics: @alcohol, 
       clothing_footwear: @clothing,
       household_bills: @household,
@@ -55,7 +55,7 @@ class Api::V1::SpendingDataController < ApplicationController
 
 
   def spending_data_params
-    params.require(:spending_data).permit(:food_non_alcholic_drinks, :alcoholic_drinks_tobacco_narcotics, :clothing_footwear, :household_bills, :recreation_culture, :education, :resturants_hotels, :transport, :other, :date)
+    params.require(:spending_data).permit(:food_non_alcoholic_drinks, :alcoholic_drinks_tobacco_narcotics, :clothing_footwear, :household_bills, :recreation_culture, :education, :resturants_hotels, :transport, :other, :date)
   end
 
 

@@ -11,7 +11,7 @@
 
 # children stats
 children = SpendingCategory.create!(
-  food_non_alcholic_drinks: 74.5,
+  food_non_alcoholic_drinks: 74.5,
   alcoholic_drinks_tobacco_narcotics: 11.8,
   clothing_footwear: 34.2,
   household_bills: 82.7,
@@ -23,7 +23,7 @@ children = SpendingCategory.create!(
 
 # age national stats
 age1NS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 43.60,
+  food_non_alcoholic_drinks: 43.60,
   alcoholic_drinks_tobacco_narcotics: 10.00,
   clothing_footwear: 19.10,
   household_bills: 122.50,
@@ -36,7 +36,7 @@ age1NS = SpendingCategory.create!(
 
 
 age2NS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 65.60,
+  food_non_alcoholic_drinks: 65.60,
   alcoholic_drinks_tobacco_narcotics: 12.00,
   clothing_footwear: 31.90,
   household_bills: 88.00,
@@ -47,7 +47,7 @@ age2NS = SpendingCategory.create!(
   other: 48.10,
 )
 
-age3NS = SpendingCategory.create!(food_non_alcholic_drinks: 63.90,
+age3NS = SpendingCategory.create!(food_non_alcoholic_drinks: 63.90,
   alcoholic_drinks_tobacco_narcotics: 15.20,
   clothing_footwear: 29.90,
   household_bills: 61.10,
@@ -59,7 +59,7 @@ age3NS = SpendingCategory.create!(food_non_alcholic_drinks: 63.90,
 )
 
 age4NS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 54.70,
+  food_non_alcoholic_drinks: 54.70,
   alcoholic_drinks_tobacco_narcotics: 12.10,
   clothing_footwear: 19.00,
   household_bills: 55.40,
@@ -71,7 +71,7 @@ age4NS = SpendingCategory.create!(
 )
 
 age5NS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 40.80,
+  food_non_alcoholic_drinks: 40.80,
   alcoholic_drinks_tobacco_narcotics: 6.50,
   clothing_footwear: 9.60,
   household_bills: 43.30,
@@ -87,7 +87,7 @@ age5NS = SpendingCategory.create!(
 
 
 northEastNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 49.80,
+  food_non_alcoholic_drinks: 49.80,
   alcoholic_drinks_tobacco_narcotics: 10.60,
   clothing_footwear: 23.40,
   household_bills: 56.10,
@@ -100,7 +100,7 @@ northEastNS = SpendingCategory.create!(
 
 
 northWestNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 55.30,
+  food_non_alcoholic_drinks: 55.30,
   alcoholic_drinks_tobacco_narcotics: 12.70,
   clothing_footwear: 23.20,
   household_bills: 62.20,
@@ -112,7 +112,7 @@ northWestNS = SpendingCategory.create!(
 )
 
 yorkshireTheHumberNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 51.00,
+  food_non_alcoholic_drinks: 51.00,
   alcoholic_drinks_tobacco_narcotics: 11.7,
   clothing_footwear: 20.9,
   household_bills: 61.2,
@@ -124,7 +124,7 @@ yorkshireTheHumberNS = SpendingCategory.create!(
 )
 
 eastMidlandsNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 57.9,
+  food_non_alcoholic_drinks: 57.9,
   alcoholic_drinks_tobacco_narcotics: 12.4,
   clothing_footwear: 22.8,
   household_bills: 66.7,
@@ -136,7 +136,7 @@ eastMidlandsNS = SpendingCategory.create!(
 )
 
 westMidlandsNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 56.7,
+  food_non_alcoholic_drinks: 56.7,
   alcoholic_drinks_tobacco_narcotics: 10.9,
   clothing_footwear: 25.1,
   household_bills: 66.9,
@@ -148,7 +148,7 @@ westMidlandsNS = SpendingCategory.create!(
 )
 
 eastNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 60.3,
+  food_non_alcoholic_drinks: 60.3,
   alcoholic_drinks_tobacco_narcotics: 11.5,
   clothing_footwear: 25.0,
   household_bills: 66.6,
@@ -161,7 +161,7 @@ eastNS = SpendingCategory.create!(
 
 
 londonNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 61.6,
+  food_non_alcoholic_drinks: 61.6,
   alcoholic_drinks_tobacco_narcotics: 9.5,
   clothing_footwear: 27.1,
   household_bills: 122.0,
@@ -174,7 +174,7 @@ londonNS = SpendingCategory.create!(
 
 
 southEastNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 63.0,
+  food_non_alcoholic_drinks: 63.0,
   alcoholic_drinks_tobacco_narcotics: 12.8,
   clothing_footwear: 26.1,
   household_bills: 76.9,
@@ -186,7 +186,7 @@ southEastNS = SpendingCategory.create!(
 )
 
 southWestNS = SpendingCategory.create!(
-  food_non_alcholic_drinks: 58.9,
+  food_non_alcoholic_drinks: 58.9,
   alcoholic_drinks_tobacco_narcotics: 10.7,
   clothing_footwear: 20.0,
   household_bills: 70.6,
@@ -199,7 +199,7 @@ southWestNS = SpendingCategory.create!(
 
   # national average stats
 average = SpendingCategory.create!(
-  food_non_alcholic_drinks: 58.0,
+  food_non_alcoholic_drinks: 58.0,
   alcoholic_drinks_tobacco_narcotics: 11.9,
   clothing_footwear: 25.1,
   household_bills: 72.6,
@@ -209,7 +209,7 @@ average = SpendingCategory.create!(
   transport: 79.7,
   other: 41.8)
 
-edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
+edspendingData = SpendingDatum.create!(food_non_alcoholic_drinks: 20,
    alcoholic_drinks_tobacco_narcotics: 57, clothing_footwear: 182,
     household_bills: 899,
     recreation_culture: 76,
@@ -219,7 +219,7 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     other: 5,
     date: "22932")
 
-    edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 65,
+    edspendingData = SpendingDatum.create!(food_non_alcoholic_drinks: 65,
    alcoholic_drinks_tobacco_narcotics: 75, 
    clothing_footwear: 55,
     household_bills: 474,
@@ -231,7 +231,7 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     date: "22932")
 
     edspendingData = SpendingDatum.create!(
-    food_non_alcholic_drinks: 75,
+    food_non_alcoholic_drinks: 75,
    alcoholic_drinks_tobacco_narcotics: 75, 
    clothing_footwear: 17,
     household_bills: 755,
@@ -242,7 +242,7 @@ edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 20,
     other: 46,
     date: "22932")
 
-    edspendingData = SpendingDatum.create!(food_non_alcholic_drinks: 267,
+    edspendingData = SpendingDatum.create!(food_non_alcoholic_drinks: 267,
    alcoholic_drinks_tobacco_narcotics: 87, 
    clothing_footwear: 186,
     household_bills: 765,

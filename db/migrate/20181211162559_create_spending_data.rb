@@ -1,7 +1,7 @@
 class CreateSpendingData < ActiveRecord::Migration[5.2]
   def change
     create_table :spending_data do |t|
-      t.integer :food_non_alcholic_drinks
+      t.integer :food_non_alcoholic_drinks
       t.integer :alcoholic_drinks_tobacco_narcotics
       t.integer :clothing_footwear
       t.integer :household_bills

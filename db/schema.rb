@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2018_12_24_141329) do
   end
 
   create_table "spending_categories", force: :cascade do |t|
-    t.integer "food_non_alcholic_drinks"
+    t.integer "food_non_alcoholic_drinks"
     t.integer "alcoholic_drinks_tobacco_narcotics"
     t.integer "clothing_footwear"
     t.integer "household_bills"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 2018_12_24_141329) do
   end
 
   create_table "spending_data", force: :cascade do |t|
-    t.integer "food_non_alcholic_drinks"
+    t.integer "food_non_alcoholic_drinks"
     t.integer "alcoholic_drinks_tobacco_narcotics"
     t.integer "clothing_footwear"
     t.integer "household_bills"
@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(version: 2018_12_24_141329) do
   end
 
   create_table "target_data", force: :cascade do |t|
-    t.integer "food_non_alcholic_drinks"
+    t.integer "food_non_alcoholic_drinks"
     t.integer "alcoholic_drinks_tobacco_narcotics"
     t.integer "clothing_footwear"
     t.integer "household_bills"

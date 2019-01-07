@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  food_non_alcholic_drinks: 1
+  food_non_alcoholic_drinks: 1
   alcoholic_drinks_tobacco_narcotics: 1
   clothing_footwear: 1
   household_bills: 1
@@ -14,7 +14,7 @@ one:
   age_options_id: 1
 
 two:
-  food_non_alcholic_drinks: 1
+  food_non_alcoholic_drinks: 1
   alcoholic_drinks_tobacco_narcotics: 1
   clothing_footwear: 1
   household_bills: 1
